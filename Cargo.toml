@@ -1,0 +1,29 @@
+[package]
+name = "ghtopdep-rs"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+name = "ghtopdep_rs"
+path = "src/lib.rs"
+
+[[bin]]
+name = "ghtopdep-rs"
+path = "src/main.rs"
+
+[dependencies]
+tokio = { version = "1", features = ["full"] }
+reqwest = { version = "0.11", features = ["json"] }
+scraper = "0.13"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+futures = "0.3"
+clap = { version = "4.0", features = ["derive"] }
+indicatif = "0.17"
+dirs = "4.0"
+rust-crypto = "0.2"
+prettytable-rs = "0.10"
+flate2 = "1.0"
+
+[dev-dependencies]
+mockito = "0.31.0"

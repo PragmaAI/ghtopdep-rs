@@ -1,0 +1,49 @@
+/target
+# Rust build output
+/target/
+
+# Binaries
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.bin
+
+# Backup files
+*~
+*.swp
+*.swo
+*.bak
+*.tmp
+
+# Mac/Linux specific
+.DS_Store
+Thumbs.db
+
+# Cargo-related
+**/Cargo.lock
+# (optional — include Cargo.lock for binaries, ignore for libraries)
+
+/.cargo/
+/.cargo/config.toml
+
+# Logs
+*.log
+
+# IDEs/editors
+.idea/
+.vscode/
+*.code-workspace
+
+# Byebug or GDB debugging files
+*.dSYM/
+*.gdb
+.gdb_history
+
+# Ubuntu-specific
+*~
+
+# Misc
+node_modules/
+
